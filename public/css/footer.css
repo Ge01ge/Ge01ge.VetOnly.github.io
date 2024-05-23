@@ -1,0 +1,201 @@
+/* ----------------------------- footer------------------------------------------- */
+
+.color{
+  color: bisque;
+}
+
+.footer {
+  background-color: #0a141d;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 8px 0;
+}
+
+.footer-section h4,
+.footer-section h2 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color:rgb(246, 235, 222);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  font-size:20px ;
+
+}
+
+.footer-section ul li a:hover {
+  /*background-color: #4d6e5a;*/
+  color: #12de64;
+  text-decoration: none; /* Aseguramos que el subrayado no aparezca */
+}
+
+.red-social {
+  display: flex;
+  gap: 10px;
+}
+
+.red-social a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.red-social a:hover {
+  color: #12de64;
+}
+
+/* Estilos para el botón de "Volver arriba" */
+#backToTopBtn {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  display: none;
+  
+  /*color: #fff;*/
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  
+}
+
+#backToTopBtn:hover {
+  background-color: #0d2033;
+  color:#fff;
+}
+
+/* Estilos para el enlace de suscripción */
+#subscribeBtn {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#subscribeBtn:hover {
+  color: #12de64;
+}
+
+/* Estilos para la ventana modal de suscripción */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: rgba(242, 208, 161, 0.623);
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal form label {
+  margin-bottom: 10px;
+  
+}
+
+.modal form input[type="email"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.modal form button {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.modal form button:hover {
+  background-color: #444;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      text-align: center;
+  }
+
+  .red-social {
+      justify-content: center;
+  }
+}
+
+  /* ------------------------------- /footer---------------------------------- */
+  
+
+
+

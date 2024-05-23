@@ -1,0 +1,124 @@
+/* ---------------------------- header ------------------------------------ */
+
+/* Estilo del menú desplegable */
+.encabezado {
+  background-color: #0d2033;
+  height: 70px;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+}
+
+.encabezado_icon {
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: solid 1px black;
+  background-color: rgb(204, 233, 204);
+}
+
+
+.encabezado nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 5rem;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px 12px;
+  display: block;
+}
+
+.nav li {
+  display: block;
+  float: left;
+}
+
+.nav li a {
+  color: white;
+}
+
+.nav li a:hover {
+  background-color: #0d2033;
+  color: bisque;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+}
+
+.nav li:hover ul {
+  display: block;
+}
+
+.nav li ul a {
+  color: white;
+  background-color: #0c386567;
+}
+
+.toggle-menu {
+  display: none; /* Ocultar el botón de menú por defecto */
+}
+
+/* Media Query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .nav {
+      display: none; /* Ocultar el menú principal en dispositivos móviles */
+  }
+
+  /* Mostrar el menú desplegable cuando está activo */
+  .nav.active {
+      display: flex; /* Mostrar el menú desplegable cuando está activo */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+      z-index: 999;
+  }
+
+  .nav.active li {
+      display: block;
+      text-align: center; /* Centra los enlaces */
+      margin: 10px 0; /* Espacio entre cada enlace */
+  }
+
+  .nav.active li:hover {
+      background-color: #0c3865; /* Cambia el color de fondo al pasar el mouse */
+  }
+
+  .toggle-menu {
+      display: block; /* Mostrar el botón de menú en dispositivos móviles */
+      position: absolute;
+      top: 20px; /* Distancia desde la parte superior */
+      right: 20px; /* Distancia desde el extremo derecho */
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+      z-index: 1000; /* Asegúrate de que esté en el nivel más alto para que esté por encima de otros elementos */
+  }
+
+  .toggle-menu:focus {
+      outline: none; /* Quitar el contorno al hacer foco en el botón */
+  }
+}
+
+  /* ------------------------------- / header ------------------------------------------- */

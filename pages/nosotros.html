@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="icon" href="../img/ICONOS/klipartz.com.png" type="imag/png">
+
+    <!-- linkeado para que funcionen los iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- linkeado para que funcionen Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- linkeado para que funcionen las fuentes de Google-Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/contacto.css">
+
+</head>
+
+<body>
+    <!-- cuerpo principal-->
+    <header class="encabezado">
+        <img src="../img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
+        <nav>
+            <span id="Inicio"></span>
+            <ul class="nav" id="menu-sucursales">
+                <li><a href="../index.html">Inicio</a> </li>
+                <li><a href="./Servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./blog.html"> Blog</a> </li>
+            </ul>
+        </nav>
+        <button id="toggle-menu-sucursales" class="toggle-menu"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <!-- Incluir el archivo header.js -->
+    <script src="../public/script/header.js"></script>
+
+    <!-- Sección Principal -->
+    <main class="cuerpo" style="padding-top: 3px;">
+        <!-- Banner -->
+        <section class="banner">
+            <img src="../img/imagenes/equipo medico.jpeg" alt="Banner Principal">
+        </section>
+
+        <div class="cuerpo">
+            <h1 class="pacifico-regular cuerpo_h1" style="color: black;"> Quienes Somos y a que Aspiramos </h1>
+        </div>
+
+        <div class="container text-center">
+            <p class="cuerpo_p">
+                El concepto de <strong><em>VetOnly</em></strong> surge de un sueño cooperativo de un grupo de
+                estudiantes de veterinaria quienes hoy
+                en día son profesionales del medio, de estar más cerca geográficamente de nuestros clientes. Dicho
+                concepto se
+                basa en la expansión estratégica de la marca, acorde a la residencia de nuestros profesionales quienes
+                brindan
+                atención clínica veterinaria y servicios de cuidado inclusivo de las mascotas, los cuales incluyen
+                peluquería,
+                paseadores, guardería y próximamente un servicio de venta de productos de Pet Shop.
+                <br>
+                Una situación que ocurre constantemente es la falta de medicamentos y/o insumos médicos que no se
+                encuentran en
+                alguna localidad, puede ser solventada mediante nuestra comunidad. De esta manera cada sucursal da
+                atención de
+                excelencia en cada una de las distintas provincias donde nos encontramos.
+                <br>
+                Los servicios externos como ecografías, radiografías y análisis químicos son gestionados de manera local
+                mediante acuerdos con terceros.
+                Los servicios de clínica veterinaria, cuidado inclusivo de las mascotas, los cuales incluyen peluquería,
+                paseadores y guardería, pueden ser solicitados y gestionados por nuestros clientes virtualmente.
+                <br>
+                La meta final a la cual aspiramos es poder brindar la mejor atención y asesoramiento al cliente y
+                próximamente
+                con la adición del pet shop poder cubrir todas las necesidades de nuestros clientes y sus preciadas
+                mascotas.
+                <br>
+            </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <!-- Segunda parte -->
+            <div class="contenedor_form2">
+                <div>
+                    <div class="cuerpo_h2_form">
+                        <h2 class="pacifico-regular"> Nuestra Sucursales</h2>
+                    </div>
+                    <h3 class="cuerpo_h3">Selecione su Sucursal</h3>
+                    <div id="botones-sucursales">
+                        <button id="buenosAires" style="margin-right: 4em;">Buenos Aires</button>
+                        <button style="margin-right: 4em;">Corrientes</button>
+                        <button>Santiago del Estero</button>
+                    </div>
+
+                    <div id="corriente-map">
+                        <div class="h4-moreinfo">
+                            <h4>Corrientes Cap. calle:</h4>
+                            <h4>Telefono de contacto: 0000-000000</h4>
+                        </div>
+                        <!-- aca me gustaria agregar un boton- enlace a whatssap-->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.049247870889!2d-58.82406568569759!3d-27.46772612319348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b5c313fa681%3A0x9506f1e73d9a5074!2sRotonda%20Poncho%20Verde!5e0!3m2!1ses!2sar!4v1654725645568!5m2!1ses!2sar"
+                            width="100%" height="250" style="border:1px solid black;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- preguntar como cambiar el tamaño del mapita-->
+                    </div>
+                    <div id="santiago-map">
+                        <div class="h4-moreinfo">
+                            <h4>Santiago del Estero - Capital. calle: Roca</h4>
+                            <h4>Telefono de contacto: 0000-111111</h4>
+                        </div>
+                        <!-- aca me gustaria agregar un boton- enlace a whatssap-->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1764.8867061217063!2d-64.25436983545785!3d-27.785955081271148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1715561131080!5m2!1ses-419!2sar"
+                            width="100%" height="250" style="border:1px solid black;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div id="bsas-map">
+                        <div class="h4-moreinfo">
+                            <h4>CABA. calle: Sta fe</h4>
+                            <h4>Telefono de contacto: 1010-222223</h4>
+                        </div>
+                        <!-- aca me gustaria agregar un boton- enlace a whatssap-->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.1533627275743!2d-58.42237552612134!3d-34.58081484458693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715561294936!5m2!1ses-419!2sar"
+                            width="100%" height="250" style="border:1px solid black;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="pacifico-regular color" style="text-align: center; margin-bottom: 10px;">Sobre nosotros</h3>
+                <p class="color">Servicios Veterinarios con cede en varias provincias</p>
+                <a href="#" id="subscribeBtn" class="pacifico-regular boton-enlace">Suscríbete a nuestro boletín</a>
+            </div>
+            <div class="footer-section">
+                <h3 class="pacifico-regular color" style="text-align: center; margin-bottom: 10px;">Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./Servicios.html">Servicios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2 class="pacifico-regular color">SEGUINOS EN</h2>
+                <div class="red-social">
+                    <a href="https://es-la.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+
+        <!--<button id="backToTopBtn">Volver arriba</button> originalmente era un boton pero me gusta mas como un link-->
+        <a id="backToTopBtn">Volver arriba</a>
+    </footer>
+
+    <!-- Modal de suscripción -->
+    <div id="subscribeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="pacifico-regular animate__animated animate__jello">Suscríbete a nuestro boletín</h2>
+            <form>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required style="font-size: 15px;">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Incluir el archivo footer.js -->
+    <script src="../public/script/footer.js"></script>
+
+    <!-- Incluir el script contacto.js -->
+    <script src="../public/script/sucursales.js"></script>
+
+
+</body>
+
+</html>
